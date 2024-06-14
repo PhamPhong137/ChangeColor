@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Choose color for website</h1>
+    <table class="color-table">
+      <thead>
+        <tr>
+          <th>Color</th>
+          <th>Status</th>
+          <th>Change color</th>
+          <th>Color code</th>
+          <th>Enter color code</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><div class="color-box" id="box1" style="background-color: #FF4D4D;"></div></td>
+          <td>Submission pending</td>
+          <td><input type="color" onchange="changeColor('box1', 'colorCode1', this.value)" /></td>
+          <td id="colorCode1">#FF4D4D</td>
+          <td><input type="text" oninput="changeColorByCode('box1', 'colorCode1', this.value)" /></td>
+        </tr>
+        <tr>
+          <td><div class="color-box" id="box2" style="background-color: #32CD32;"></div></td>
+          <td>Submission failed</td>
+          <td><input type="color" onchange="changeColor('box2', 'colorCode2', this.value)" /></td>
+          <td id="colorCode2">#32CD32</td>
+          <td><input type="text" oninput="changeColorByCode('box2', 'colorCode2', this.value)" /></td>
+        </tr>
+        <tr>
+          <td><div class="color-box" id="box3" style="background-color: #FF8C00;"></div></td>
+          <td>Submitted</td>
+          <td><input type="color" onchange="changeColor('box3', 'colorCode3', this.value)" /></td>
+          <td id="colorCode3">#FF8C00</td>
+          <td><input type="text" oninput="changeColorByCode('box3', 'colorCode3', this.value)" /></td>
+        </tr>
+        <tr>
+          <td><div class="color-box" id="box4" style="background-color: #FF1493;"></div></td>
+          <td>Invalid data</td>
+          <td><input type="color" onchange="changeColor('box4', 'colorCode4', this.value)" /></td>
+          <td id="colorCode4">#FF1493</td>
+          <td><input type="text" oninput="changeColorByCode('box4', 'colorCode4', this.value)" /></td>
+        </tr>
+        <tr>
+          <td><div class="color-box" id="box5" style="background-color: #025602;"></div></td>
+          <td>Valid data</td>
+          <td><input type="color" onchange="changeColor('box5', 'colorCode5', this.value)" /></td>
+          <td id="colorCode5">#025602</td>
+          <td><input type="text" oninput="changeColorByCode('box5', 'colorCode5', this.value)" /></td>
+        </tr>
+        <tr>
+          <td><div class="color-box" id="box6" style="background-color: #FF0000;"></div></td>
+          <td>Rejected</td>
+          <td><input type="color" onchange="changeColor('box6', 'colorCode6', this.value)" /></td>
+          <td id="colorCode6">#FF0000</td>
+          <td><input type="text" oninput="changeColorByCode('box6', 'colorCode6', this.value)" /></td>
+        </tr>
+        <tr>
+          <td><div class="color-box" id="box7" style="background-color: #0000f9d1;"></div></td>
+          <td>Cancellation Approval Pending</td>
+          <td><input type="color" onchange="changeColor('box7', 'colorCode7', this.value)" /></td>
+          <td id="colorCode7">#0000f9d1</td>
+          <td><input type="text" oninput="changeColorByCode('box7', 'colorCode7', this.value)" /></td>
+        </tr>
+        <tr>
+          <td><div class="color-box" id="box8" style="background-color: #0c4c99;"></div></td>
+          <td>Cancellation Approved</td>
+          <td><input type="color" onchange="changeColor('box8', 'colorCode8', this.value)" /></td>
+          <td id="colorCode8">#0c4c99</td>
+          <td><input type="text" oninput="changeColorByCode('box8', 'colorCode8', this.value)" /></td>
+        </tr>
+        <tr>
+          <td><div class="color-box" id="box9" style="background-color: #9370DB;"></div></td>
+          <td>Cancellation Failed</td>
+          <td><input type="color" onchange="changeColor('box9', 'colorCode9', this.value)" /></td>
+          <td id="colorCode9">#9370DB</td>
+          <td><input type="text" oninput="changeColorByCode('box9', 'colorCode9', this.value)" /></td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
