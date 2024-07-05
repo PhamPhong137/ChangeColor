@@ -96,7 +96,7 @@
           <td></td>
           <td></td>
         </tr>
-      
+        ["#d5d500", "#009100", "#a81a1a", "#b8b7b7", "#663d3d", "#a6a653"]
         <tr>
           <td><div class="color-box" id="box11" style="background-color: #808080;"></div></td>
           <td>Total</td>
@@ -112,6 +112,13 @@
           <td><input type="text" oninput="changeColorByCode('box12', 'colorCode12', this.value)" /></td>
         </tr>
         <tr>
+          <td><div class="color-box" id="box14" style="background-color: #a81a1a;"></div></td>
+          <td>Approve reject</td>
+          <td><input type="color" onchange="changeColor('box14', 'colorCode14', this.value)" /></td>
+          <td id="colorCode14"></td>
+          <td><input type="text" oninput="changeColorByCode('box14', 'colorCode14', this.value)" /></td>
+        </tr>
+        <tr>
           <td><div class="color-box" id="box13" style="background-color: #009100;"></div></td>
           <td>Approved</td>
           <td><input type="color" onchange="changeColor('box13', 'colorCode13', this.value)" /></td>
@@ -119,33 +126,34 @@
           <td><input type="text" oninput="changeColorByCode('box13', 'colorCode13', this.value)" /></td>
         </tr>
         <tr>
-          <td><div class="color-box" id="box14" style="background-color: black;"></div></td>
-          <td>Approve reject</td>
-          <td><input type="color" onchange="changeColor('box14', 'colorCode14', this.value)" /></td>
-          <td id="colorCode14"></td>
-          <td><input type="text" oninput="changeColorByCode('box14', 'colorCode14', this.value)" /></td>
-        </tr>
-        <tr>
           <td><div class="color-box" id="box15" style="background-color: black;"></div></td>
-          <td>External Canceled</td>
+          <td>External Cancellation pending</td>
           <td><input type="color" onchange="changeColor('box15', 'colorCode15', this.value)" /></td>
           <td id="colorCode15"></td>
           <td><input type="text" oninput="changeColorByCode('box15', 'colorCode15', this.value)" /></td>
         </tr>
         <tr>
           <td><div class="color-box" id="box16" style="background-color: black;"></div></td>
-          <td>Internal Canceled</td>
+          <td>Internal Cancellation pending </td>
           <td><input type="color" onchange="changeColor('box16', 'colorCode16', this.value)" /></td>
           <td id="colorCode16"></td>
           <td><input type="text" oninput="changeColorByCode('box16', 'colorCode16', this.value)" /></td>
         </tr>
         <tr>
-          <td><div class="color-box" id="box17" style="background-color: #a6a653;"></div></td>
-          <td>Cancellation pending</td>
+          <td><div class="color-box" id="box17" style="background-color: black;"></div></td>
+          <td>External Canceled </td>
           <td><input type="color" onchange="changeColor('box17', 'colorCode17', this.value)" /></td>
           <td id="colorCode17">#a6a653</td>
           <td><input type="text" oninput="changeColorByCode('box17', 'colorCode17', this.value)" /></td>
         </tr>
+        <tr>
+          <td><div class="color-box" id="box18" style="background-color: black;"></div></td>
+          <td>Internal Canceled </td>
+          <td><input type="color" onchange="changeColor('box18', 'colorCode18', this.value)" /></td>
+          <td id="colorCode18"></td>
+          <td><input type="text" oninput="changeColorByCode('box18', 'colorCode18', this.value)" /></td>
+        </tr>
+
       </tbody>
     </table>
     <div style="height: 300px;">
